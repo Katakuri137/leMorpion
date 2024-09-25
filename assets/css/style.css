@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "RetroFont";
+  src: url("/assets/font/retro_font.ttf") format("truetype");
+}
+
+body {
+  font-family: "RetroFont", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  color: #00ff00;
+  margin: 0;
+  overflow: hidden;
+}
+
+#menu {
+  text-align: center;
+}
+
+#menu h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  animation: blink 1s infinite;
+}
+
+#menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#menu li {
+  margin: 10px 0;
+}
+
+#menu a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #00ff00;
+  transition: color 0.3s;
+}
+
+#menu a:hover {
+  color: #ff0000;
+}
+
+#game {
+  text-align: center;
+}
+
+#board {
+  display: grid;
+  margin: 20px auto;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  background-color: #333;
+  border: 2px solid #00ff00;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cell.R {
+  background-color: red;
+}
+
+.cell.Y {
+  background-color: yellow;
+}
+
+.cell:hover {
+  background-color: #555;
+}
+
+#status {
+  margin: 20px;
+  font-size: 1.2em;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #00ff00;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff0000;
+}
+
+/* Anim blink */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+audio {
+  display: none;
+}

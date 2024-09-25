@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morpion</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div id="game">
+        <h1>Morpion</h1>
+        <div id="board"></div>
+        <div id="status"></div>
+        <button id="reset">Réinitialiser</button>
+        <br>
+        <a href="index.html">Retour au Menu</a>
+    </div>
+    <audio id="sound" loop autoplay>
+        <source src="/assets/sound/sound.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        document.getElementById('sound').volume = 0;
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
